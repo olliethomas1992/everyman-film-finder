@@ -32,7 +32,7 @@ const Films = () => {
     }, [dispatch, state.isLondon]);
 
     return (
-        <Fragment>
+        <>
             <SelectedFilm film={state.selectedFilm} />
             <ShowingList />
             <Grid
@@ -48,7 +48,7 @@ const Films = () => {
                     }
                 })}
             </Grid>
-        </Fragment>
+        </>
     );
 };
 export default Films;
