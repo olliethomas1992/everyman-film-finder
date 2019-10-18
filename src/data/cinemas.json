@@ -1,0 +1,188 @@
+[
+	{
+		"CinemaId": 7913,
+		"CinemaName": "Altrincham",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 20,
+		"CinemaName": "Baker Street",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 239,
+		"CinemaName": "Barnet",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 21,
+		"CinemaName": "Belsize Park",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 261,
+		"CinemaName": "Bristol",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7925,
+		"CinemaName": "Broadgate",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 198,
+		"CinemaName": "Canary Wharf",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7731,
+		"CinemaName": "Chelmsford",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7927,
+		"CinemaName": "Clitheroe",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7912,
+		"CinemaName": "Crystal Palace",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 255,
+		"CinemaName": "Esher",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 252,
+		"CinemaName": "Gerrards Cross",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7911,
+		"CinemaName": "Glasgow",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 22,
+		"CinemaName": "Hampstead",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7723,
+		"CinemaName": "Harrogate",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7920,
+		"CinemaName": "Horsham",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 262,
+		"CinemaName": "King\u0027s Cross",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 25,
+		"CinemaName": "Leeds",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7916,
+		"CinemaName": "Liverpool",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 23,
+		"CinemaName": "Maida Vale",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 195,
+		"CinemaName": "Mailbox Birmingham",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7922,
+		"CinemaName": "Manchester St. John\u0027s",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 236,
+		"CinemaName": "Muswell Hill",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7921,
+		"CinemaName": "Newcastle",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 24,
+		"CinemaName": "Oxted",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 26,
+		"CinemaName": "Reigate",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 27,
+		"CinemaName": "Screen on the Green",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7734,
+		"CinemaName": "Stratford-upon-Avon",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 28,
+		"CinemaName": "Walton",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 29,
+		"CinemaName": "Winchester",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	},
+	{
+		"CinemaId": 7875,
+		"CinemaName": "York",
+		"CinemaUrl": null,
+		"CinemaFilmUrl": null
+	}
+]
