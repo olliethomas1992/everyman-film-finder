@@ -18,6 +18,7 @@ const FilmItem = ({ film }) => {
             height="261px"
             width="175px"
             onClick={e => onClickFilm(e, film)}
+            margin="auto"
         >
             <Image
                 height="261px"
