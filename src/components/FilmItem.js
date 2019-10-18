@@ -9,7 +9,6 @@ const FilmItem = ({ film }) => {
     const onClickFilm = (e, selectedFilm) => {
         dispatch({ type: 'CLEAR_SHOWINGS' });
         dispatch({ type: 'SELECT_FILM', payload: selectedFilm.FilmId });
-        window.scrollTo(0, 0);
     };
 
     if (!film) return null;
