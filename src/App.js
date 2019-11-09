@@ -63,7 +63,7 @@ function App() {
                                     }}
                                 />
                                 <Box
-                                    flex="grow"
+                                    flex={size === 'small' ? 'shrink' : 'grow'}
                                     direction="row"
                                     align="center"
                                     justify="center"

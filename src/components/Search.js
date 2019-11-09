@@ -35,6 +35,9 @@ const Search = () => {
             )}
             {state.selectedFilm && (
                 <Button
+                    style={{
+                        maxWidth: '100%'
+                    }}
                     icon={<Close />}
                     label={state.films.byId[state.selectedFilm].Title}
                     onClick={() => handleOnChange('')}
