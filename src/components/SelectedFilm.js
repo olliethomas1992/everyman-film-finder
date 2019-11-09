@@ -4,7 +4,7 @@ import context from '../context';
 
 const SelectedFilm = ({ film }) => {
     const { state } = useContext(context);
-    const selectedFilm = state.filmsById[film];
+    const selectedFilm = state.films.byId[film];
 
     if (!selectedFilm) return null;
 

@@ -2,23 +2,23 @@ import React, { useState, useReducer, useContext } from 'react';
 import {
     Box,
     Button,
-    Heading,
     Grommet,
     Collapsible,
     ResponsiveContext,
     Layer
 } from 'grommet';
-import { FormClose } from 'grommet-icons';
+import { Close, Menu } from 'grommet-icons';
+import Logo from './logo.png';
 import Films from './containers/Films';
 import Context from './context';
 import reducer from './reducer';
 import Search from './components/Search';
-import London from './components/London';
+import Background from './background.jpg';
 
 const theme = {
     global: {
         colors: {
-            brand: '#228BE6'
+            brand: '#000'
         },
         font: {
             family: 'Roboto',
@@ -54,16 +54,27 @@ function App() {
                     {size => (
                         <Box fill>
                             <AppBar>
-                                <Heading level="3" margin="none">
-                                    Everyman Film Finder
-                                </Heading>
-                                <Search />
+                                <img
+                                    height="50"
+                                    src={Logo}
+                                    alt="Everyman Film Finder"
+                                    style={{
+                                        marginRight: '25px'
+                                    }}
+                                />
+                                <Box
+                                    flex="grow"
+                                    direction="row"
+                                    align="center"
+                                    justify="center"
+                                >
+                                    <Search />
+                                </Box>
                                 {/* SIDE BAR BUTTON */}
                                 {/* <Button
                                     icon={<Menu />}
                                     onClick={() => setShowSideBar(!showSidebar)}
                                 /> */}
-                                <London />
                             </AppBar>
                             <Box
                                 direction="row"
@@ -71,11 +82,14 @@ function App() {
                                 overflow={{ horizontal: 'hidden' }}
                             >
                                 <Box
-                                    // pad={{
-                                    //     horizonal: 'large'
-                                    // }}
                                     pad="small"
-                                    flex
+                                    flex="grow"
+                                    overflow="scroll"
+                                    style={{
+                                        backgroundImage: `url(${Background})`,
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundAttachment: 'fixed'
+                                    }}
                                 >
                                     <Films />
                                 </Box>
@@ -105,7 +119,7 @@ function App() {
                                             direction="row"
                                         >
                                             <Button
-                                                icon={<FormClose />}
+                                                icon={<Close />}
                                                 onClick={() =>
                                                     setShowSideBar(!showSidebar)
                                                 }

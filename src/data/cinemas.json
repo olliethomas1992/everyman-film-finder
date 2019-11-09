@@ -1,188 +1,290 @@
 [
 	{
-		"CinemaId": 7913,
-		"CinemaName": "Altrincham",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7913,
+		"address": "74-78 George Street ",
+		"postcode": "WA14 1RF",
+		"cinemaName": "Altrincham",
+		"latitude": 53.386509,
+		"longitude": -2.351419,
+		"city": "Altrincham"
 	},
 	{
-		"CinemaId": 20,
-		"CinemaName": "Baker Street",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 20,
+		"address": "96-98 Baker Street ",
+		"postcode": "W1U 6TJ",
+		"cinemaName": "Baker Street",
+		"latitude": 51.52095200000001,
+		"longitude": -0.1569861000000401,
+		"city": "London"
 	},
 	{
-		"CinemaId": 239,
-		"CinemaName": "Barnet",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 239,
+		"address": "Great North Road ",
+		"postcode": "EN5 1AB",
+		"cinemaName": "Barnet",
+		"latitude": 51.646744,
+		"longitude": -0.187757,
+		"city": "Barnet"
 	},
 	{
-		"CinemaId": 21,
-		"CinemaName": "Belsize Park",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 21,
+		"address": "203 Haverstock Hill Belsize Park",
+		"postcode": "NW3 4QG",
+		"cinemaName": "Belsize Park",
+		"latitude": 51.550621,
+		"longitude": -0.16561590000003434,
+		"city": "London"
 	},
 	{
-		"CinemaId": 261,
-		"CinemaName": "Bristol",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 261,
+		"address": "44 Whiteladies Road ",
+		"postcode": "BS8 2NH",
+		"cinemaName": "Bristol",
+		"latitude": 51.463226,
+		"longitude": -2.609445,
+		"city": " Bristol "
 	},
 	{
-		"CinemaId": 7925,
-		"CinemaName": "Broadgate",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7925,
+		"address": "1 Finsbury Avenue ",
+		"postcode": "EC2M 2PF",
+		"cinemaName": "Broadgate",
+		"latitude": 51.519723,
+		"longitude": -0.085029,
+		"city": "London"
 	},
 	{
-		"CinemaId": 198,
-		"CinemaName": "Canary Wharf",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 198,
+		"address": "Crossrail Place Level -2 Canary Wharf",
+		"postcode": "E14 5AR",
+		"cinemaName": "Canary Wharf",
+		"latitude": 51.506347,
+		"longitude": -0.018109,
+		"city": "London"
 	},
 	{
-		"CinemaId": 7731,
-		"CinemaName": "Chelmsford",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7731,
+		"address": "131 Bond Street ",
+		"postcode": "CM1 1GD",
+		"cinemaName": "Chelmsford",
+		"latitude": 51.7346231,
+		"longitude": 0.4756633,
+		"city": "Chelmsford"
 	},
 	{
-		"CinemaId": 7927,
-		"CinemaName": "Clitheroe",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7927,
+		"address": "Holmes Mill Greenacre Street",
+		"postcode": "BB7 1EB",
+		"cinemaName": "Clitheroe",
+		"latitude": 53.868294,
+		"longitude": -2.393882,
+		"city": "Clitheroe"
 	},
 	{
-		"CinemaId": 7912,
-		"CinemaName": "Crystal Palace",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7912,
+		"address": "25 Church Road Crystal Palace",
+		"postcode": "SE19 2TE",
+		"cinemaName": "Crystal Palace",
+		"latitude": 51.419127,
+		"longitude": -0.079036,
+		"city": "London "
 	},
 	{
-		"CinemaId": 255,
-		"CinemaName": "Esher",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 255,
+		"address": "22 High Street Esher",
+		"postcode": "KT10 9RT",
+		"cinemaName": "Esher",
+		"latitude": 51.371091,
+		"longitude": -0.364268,
+		"city": ""
 	},
 	{
-		"CinemaId": 252,
-		"CinemaName": "Gerrards Cross",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 252,
+		"address": "Ethorpe Crescent Gerrards Cross",
+		"postcode": " SL9 8PN",
+		"cinemaName": "Gerrards Cross",
+		"latitude": 51.58916,
+		"longitude": -0.553284,
+		"city": "Buckinghamshire"
 	},
 	{
-		"CinemaId": 7911,
-		"CinemaName": "Glasgow",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7911,
+		"address": "Unit 3 - 5, Princes Square Buchanan Street",
+		"postcode": "G1 3JN",
+		"cinemaName": "Glasgow",
+		"latitude": 55.859323,
+		"longitude": -4.25373,
+		"city": " Glasgow"
 	},
 	{
-		"CinemaId": 22,
-		"CinemaName": "Hampstead",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 22,
+		"address": "5 Holly Bush Vale Hampstead",
+		"postcode": "NW3 6TX",
+		"cinemaName": "Hampstead",
+		"latitude": 51.556671,
+		"longitude": -0.179081,
+		"city": "London"
 	},
 	{
-		"CinemaId": 7723,
-		"CinemaName": "Harrogate",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7723,
+		"address": "Westgate House Station Parade",
+		"postcode": "HG1 1HQ",
+		"cinemaName": "Harrogate",
+		"latitude": 53.99178,
+		"longitude": -1.537916,
+		"city": "Harrogate"
 	},
 	{
-		"CinemaId": 7920,
-		"CinemaName": "Horsham",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7920,
+		"address": "16 Piries Place ",
+		"postcode": "RH12 1EH",
+		"cinemaName": "Horsham",
+		"latitude": 51.062285,
+		"longitude": -0.326956,
+		"city": "Horsham"
 	},
 	{
-		"CinemaId": 262,
-		"CinemaName": "King\u0027s Cross",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 262,
+		"address": "14-18 Handyside Street King's Cross",
+		"postcode": "N1C 4DN",
+		"cinemaName": "King's Cross",
+		"latitude": 51.537863,
+		"longitude": -0.12688,
+		"city": "London"
 	},
 	{
-		"CinemaId": 25,
-		"CinemaName": "Leeds",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 25,
+		"address": "Level 4 Trinity   Albion Street",
+		"postcode": "LS1 5AY",
+		"cinemaName": "Leeds",
+		"latitude": 53.797189,
+		"longitude": -1.54785,
+		"city": "Leeds "
 	},
 	{
-		"CinemaId": 7916,
-		"CinemaName": "Liverpool",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7916,
+		"address": "Metquarter 35 Victoria Street",
+		"postcode": "L1 6DA",
+		"cinemaName": "Liverpool",
+		"latitude": 53.407286,
+		"longitude": -2.986221,
+		"city": "Liverpool"
 	},
 	{
-		"CinemaId": 23,
-		"CinemaName": "Maida Vale",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 23,
+		"address": "215 Sutherland Avenue Maida Vale",
+		"postcode": "W9 1RU",
+		"cinemaName": "Maida Vale",
+		"latitude": 51.528266,
+		"longitude": -0.181807,
+		"city": "London"
 	},
 	{
-		"CinemaId": 195,
-		"CinemaName": "Mailbox Birmingham",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 195,
+		"address": "116 Wharfside Street The Mailbox",
+		"postcode": "B1 1RF",
+		"cinemaName": "Mailbox Birmingham",
+		"latitude": 52.4762454,
+		"longitude": -1.9053091000000677,
+		"city": "Birmingham"
 	},
 	{
-		"CinemaId": 7922,
-		"CinemaName": "Manchester St. John\u0027s",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7922,
+		"address": "ABC Building 23 Quay Street",
+		"postcode": "M3 4AS",
+		"cinemaName": "Manchester St. John's",
+		"latitude": 53.478571,
+		"longitude": -2.252721,
+		"city": "Manchester"
 	},
 	{
-		"CinemaId": 236,
-		"CinemaName": "Muswell Hill",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 236,
+		"address": "Fortis Green Road Muswell Hill",
+		"postcode": "N10 3HP",
+		"cinemaName": "Muswell Hill",
+		"latitude": 51.589991,
+		"longitude": -0.146069,
+		"city": "London"
 	},
 	{
-		"CinemaId": 7921,
-		"CinemaName": "Newcastle",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7921,
+		"address": "75-85 Grey Street ",
+		"postcode": "NE1 6EF",
+		"cinemaName": "Newcastle",
+		"latitude": 54.9726041,
+		"longitude": -1.615106,
+		"city": "Newcastle-Upon-Tyne"
 	},
 	{
-		"CinemaId": 24,
-		"CinemaName": "Oxted",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 24,
+		"address": "7 Station Road West Oxted",
+		"postcode": "RH8 9EE",
+		"cinemaName": "Oxted",
+		"latitude": 51.257543,
+		"longitude": -0.006099,
+		"city": ""
 	},
 	{
-		"CinemaId": 26,
-		"CinemaName": "Reigate",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 26,
+		"address": "Bancroft Road Reigate",
+		"postcode": "RH2 7RP",
+		"cinemaName": "Reigate",
+		"latitude": 51.237121,
+		"longitude": -0.204129,
+		"city": ""
 	},
 	{
-		"CinemaId": 27,
-		"CinemaName": "Screen on the Green",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 27,
+		"address": "83 Upper Street Islington",
+		"postcode": "N1 0NP",
+		"cinemaName": "Screen on the Green",
+		"latitude": 51.537076,
+		"longitude": -0.103626,
+		"city": "London"
 	},
 	{
-		"CinemaId": 7734,
-		"CinemaName": "Stratford-upon-Avon",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7734,
+		"address": "Bell Court Wood Street",
+		"postcode": "CV37 6JW",
+		"cinemaName": "Stratford-upon-Avon",
+		"latitude": 52.192639,
+		"longitude": -1.707484,
+		"city": "Stratford-upon-Avon"
 	},
 	{
-		"CinemaId": 28,
-		"CinemaName": "Walton",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 28,
+		"address": "85-89 High Street Walton-on-Thames",
+		"postcode": "KT12 1DN",
+		"cinemaName": "Walton",
+		"latitude": 51.384061,
+		"longitude": -0.416632,
+		"city": ""
 	},
 	{
-		"CinemaId": 29,
-		"CinemaName": "Winchester",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 29,
+		"address": "Southgate Street Winchester",
+		"postcode": "SO23 9EG",
+		"cinemaName": "Winchester",
+		"latitude": 51.060717,
+		"longitude": -1.318696,
+		"city": ""
 	},
 	{
-		"CinemaId": 7875,
-		"CinemaName": "York",
-		"CinemaUrl": null,
-		"CinemaFilmUrl": null
+		"id": 7930,
+		"address": "Elms Walk ",
+		"postcode": "RG40 2FE",
+		"cinemaName": "Wokingham",
+		"latitude": 51.409401,
+		"longitude": -0.836659,
+		"city": "Wokingham"
+	},
+	{
+		"id": 7875,
+		"address": "Blossom Street ",
+		"postcode": "YO24 1AJ",
+		"cinemaName": "York",
+		"latitude": 53.954781,
+		"longitude": -1.092888,
+		"city": "York"
 	}
 ]

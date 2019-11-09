@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { Box, Text } from 'grommet';
 import Axios from 'axios';
-import { map, isEmpty } from 'lodash';
+import { isEmpty } from 'lodash';
 import context from '../context';
 import Showing from './Showing';
 
@@ -9,28 +9,26 @@ const ShowingList = () => {
     const { state, dispatch } = useContext(context);
 
     useEffect(() => {
-        const getShowings = async cinemaId => {
+        const getShowings = async id => {
             const { data } = await Axios.get(
-                `https://movieeverymanapi.peachdigital.com/movies/13/${cinemaId}`
+                `https://movieeverymanapi.peachdigital.com/movies/13/${id}`
             );
             const film = data.find(film => film.FilmId === state.selectedFilm);
 
             if (film) {
-                dispatch({
+                return dispatch({
                     type: 'GET_SHOWING',
                     payload: {
                         film,
-                        cinemaId
+                        id
                     }
                 });
             }
         };
-        map(state.cinemas, cinema => {
-            if (cinema.CinemaId) {
-                getShowings(cinema.CinemaId);
-            }
-        });
-    }, [dispatch, state.cinemas, state.selectedFilm]);
+        state.cinemas.allIds
+            .slice(0, state.closestCinemas)
+            .map(async cinema => getShowings(cinema.id));
+    }, [dispatch, state.cinemas, state.closestCinemas, state.selectedFilm]);
 
     if (state.selectedFilm !== null && isEmpty(state.showings)) {
         return (
@@ -40,12 +38,24 @@ const ShowingList = () => {
         );
     }
 
+    if (!state.showings.allIds.length)
+        return (
+            <Box pad="large" align="center">
+                <Text>Not showing close to you</Text>
+            </Box>
+        );
+
     return (
         <div>
             <Box pad="large" margin="small" border="bottom" flex>
-                {map(state.showings, showing => (
-                    <Showing key={showing.cinemaId} showing={showing} />
-                ))}
+                {state.cinemas.allIds
+                    .slice(0, state.closestCinemas)
+                    .map(cinema => {
+                        const showing = state.showings.byId[cinema.id];
+                        return showing ? (
+                            <Showing key={showing.id} showing={showing} />
+                        ) : null;
+                    })}
             </Box>
         </div>
     );

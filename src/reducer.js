@@ -1,9 +1,12 @@
-import cinemasUk from './data/cinemas.json';
-import cinemasLondon from './data/cinemasLondon.json';
+import sortByDistance from 'sort-by-distance';
+import cinemas from './data/cinemas.json';
+
+const opts = {
+    yName: 'latitude',
+    xName: 'longitude'
+};
 
 export default function reducer(state, { type, payload }) {
-    const cinemas = state.isLondon ? cinemasLondon : cinemasUk;
-
     switch (type) {
         case 'SELECT_FILM':
             return { ...state, selectedFilm: payload };
@@ -11,11 +14,14 @@ export default function reducer(state, { type, payload }) {
             return {
                 ...state,
                 cinemas: {
-                    ...state.cinemas,
-                    ...cinemas.reduce((newCinemas, cinema) => {
-                        newCinemas[cinema.CinemaId] = cinema;
-                        return newCinemas;
-                    }, {})
+                    byId: {
+                        ...state.cinemas.byId,
+                        ...cinemas.reduce((newCinemas, cinema) => {
+                            newCinemas[cinema.id] = cinema;
+                            return newCinemas;
+                        }, {})
+                    },
+                    allIds: [...sortByDistance(state.origin, cinemas, opts)]
                 }
             };
         case 'GET_FILMS':
@@ -30,7 +36,14 @@ export default function reducer(state, { type, payload }) {
                 },
                 films: {
                     ...state.films,
-                    ...payload
+                    byId: {
+                        ...state.films.byId,
+                        ...payload.reduce((films, film) => {
+                            films[film.FilmId] = film;
+                            return films;
+                        }, {})
+                    },
+                    allIds: [...payload]
                 }
             };
         case 'GET_SHOWING':
@@ -38,16 +51,23 @@ export default function reducer(state, { type, payload }) {
                 ...state,
                 showings: {
                     ...state.showings,
-                    [payload.cinemaId]: {
-                        cinemaId: payload.cinemaId,
-                        sessions: payload.film.Sessions || []
-                    }
+                    byId: {
+                        ...state.showings.byId,
+                        [payload.id]: {
+                            id: payload.id,
+                            sessions: payload.film.Sessions || []
+                        }
+                    },
+                    allIds: [...state.showings.allIds, payload.id]
                 }
             };
         case 'CLEAR_SHOWINGS':
             return {
                 ...state,
-                showings: {}
+                showings: {
+                    byId: {},
+                    allIds: []
+                }
             };
         case 'SEARCH':
             return {
@@ -57,10 +77,13 @@ export default function reducer(state, { type, payload }) {
                     ...state.films
                 }
             };
-        case 'LONDON':
+        case 'GET_LOCATION':
             return {
                 ...state,
-                isLondon: !state.isLondon
+                origin: {
+                    latitude: payload.latitude,
+                    longitude: payload.longitude
+                }
             };
         default:
             return state;

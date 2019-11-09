@@ -1,11 +1,11 @@
-import React, { useState, useContext, Fragment } from 'react';
+import React, { useState, useContext } from 'react';
 import { TextInput, Button } from 'grommet';
-import { Trash } from 'grommet-icons';
+import { Trash, Close } from 'grommet-icons';
 import context from '../context';
 
 const Search = () => {
     const [value, setValue] = useState('');
-    const { dispatch } = useContext(context);
+    const { state, dispatch } = useContext(context);
 
     const handleOnChange = eValue => {
         setValue(eValue);
@@ -15,14 +15,32 @@ const Search = () => {
     };
 
     return (
-        <Fragment>
-            <TextInput
-                placeholder="Search Movie"
-                value={value}
-                onChange={e => handleOnChange(e.target.value)}
-            />
-            <Button icon={<Trash />} onClick={() => handleOnChange('')} />
-        </Fragment>
+        <>
+            {!state.selectedFilm && (
+                <>
+                    <TextInput
+                        placeholder="Search Movie"
+                        value={value}
+                        onChange={e => handleOnChange(e.target.value)}
+                        style={{
+                            backgroundColor: 'white',
+                            color: 'black'
+                        }}
+                    />
+                    <Button
+                        icon={<Trash />}
+                        onClick={() => handleOnChange('')}
+                    />
+                </>
+            )}
+            {state.selectedFilm && (
+                <Button
+                    icon={<Close />}
+                    label={state.films.byId[state.selectedFilm].Title}
+                    onClick={() => handleOnChange('')}
+                />
+            )}
+        </>
     );
 };
 

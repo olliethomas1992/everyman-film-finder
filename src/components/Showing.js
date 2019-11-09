@@ -14,11 +14,11 @@ import TimesList from './TimesList';
 
 const Showing = ({ showing }) => {
     const { state } = useContext(context);
-
+    const cinema = state.cinemas.byId[showing.id];
     return (
         <Box overflow="scroll">
             <Heading level="3">
-                {state.cinemas[showing.cinemaId].CinemaName}
+                {cinema.cinemaName} - {cinema.city}
             </Heading>
             <Table>
                 <TableHeader>

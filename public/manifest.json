@@ -1,5 +1,5 @@
 {
-	"short_name": "EverymanFF",
+	"short_name": "Everyman",
 	"name": "Everyman Film Finder",
 	"icons": [
 		{
@@ -8,18 +8,18 @@
 			"type": "image/x-icon"
 		},
 		{
-			"src": "logo192.png",
+			"src": "logo196.png",
 			"type": "image/png",
-			"sizes": "192x192"
+			"sizes": "196x196"
 		},
 		{
-			"src": "logo512.png",
+			"src": "logo196.png",
 			"type": "image/png",
-			"sizes": "512x512"
+			"sizes": "196x196"
 		}
 	],
 	"start_url": ".",
 	"display": "standalone",
-	"theme_color": "#228BE6",
-	"background_color": "#ffffff"
+	"theme_color": "#ee9ca6",
+	"background_color": "#000"
 }
