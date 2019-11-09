@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import { Box, Text } from 'grommet';
 import Axios from 'axios';
 import { isEmpty } from 'lodash';
+import Loader from 'react-loader-spinner';
 import context from '../context';
 import Showing from './Showing';
 
@@ -41,7 +42,7 @@ const ShowingList = () => {
     if (!state.showings.allIds.length)
         return (
             <Box pad="large" align="center">
-                <Text>Not showing close to you</Text>
+                <Loader type="Oval" color="#000" height={100} width={100} />
             </Box>
         );
 

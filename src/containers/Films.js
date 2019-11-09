@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import axios from 'axios';
-import { Grid, ResponsiveContext, Text, Box } from 'grommet';
+import { Grid, ResponsiveContext, Box } from 'grommet';
+import Loader from 'react-loader-spinner';
 import context from '../context';
 import FilmItem from '../components/FilmItem';
 
@@ -104,7 +105,13 @@ const Films = () => {
                                         pad="large"
                                         justify="center"
                                     >
-                                        <Text>Film not found</Text>
+                                        <Loader
+                                            type="Oval"
+                                            color="#000"
+                                            height={100}
+                                            width={100}
+                                            timeout={5000}
+                                        />
                                     </Box>
                                 )}
                             </>
