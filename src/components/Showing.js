@@ -18,7 +18,9 @@ const Showing = ({ showing }) => {
     return (
         <Box overflow="scroll">
             <Heading level="3">
-                {cinema.cinemaName} - {cinema.city}
+                {cinema.city
+                    ? `${cinema.cinemaName} - ${cinema.city}`
+                    : cinema.cinemaName}
             </Heading>
             <Table>
                 <TableHeader>
