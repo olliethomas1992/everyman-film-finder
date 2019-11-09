@@ -14,6 +14,7 @@ import Context from './context';
 import reducer from './reducer';
 import Search from './components/Search';
 import Background from './background.jpg';
+import CinemaList from './components/CinemaList';
 
 const theme = {
     global: {
@@ -71,10 +72,14 @@ function App() {
                                     <Search />
                                 </Box>
                                 {/* SIDE BAR BUTTON */}
-                                {/* <Button
-                                    icon={<Menu />}
-                                    onClick={() => setShowSideBar(!showSidebar)}
-                                /> */}
+                                {!state.selectedFilm && (
+                                    <Button
+                                        icon={<Menu />}
+                                        onClick={() =>
+                                            setShowSideBar(!showSidebar)
+                                        }
+                                    />
+                                )}
                             </AppBar>
                             <Box
                                 direction="row"
@@ -104,9 +109,10 @@ function App() {
                                             background="light-2"
                                             elevation="small"
                                             align="center"
-                                            justify="center"
+                                            pad="small"
+                                            overflow="scroll"
                                         >
-                                            sidebar
+                                            <CinemaList />
                                         </Box>
                                     </Collapsible>
                                 ) : (
@@ -126,12 +132,15 @@ function App() {
                                             />
                                         </Box>
                                         <Box
-                                            fill
+                                            flex
+                                            width="medium"
                                             background="light-2"
+                                            elevation="small"
                                             align="center"
-                                            justify="center"
+                                            pad="small"
+                                            overflow="scroll"
                                         >
-                                            sidebar
+                                            <CinemaList />
                                         </Box>
                                     </Layer>
                                 )}

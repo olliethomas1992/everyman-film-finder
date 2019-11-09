@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import axios from 'axios';
 import { Grid, ResponsiveContext, Text, Box } from 'grommet';
-import { lastDayOfDecade } from 'date-fns/esm';
 import context from '../context';
 import FilmItem from '../components/FilmItem';
 
@@ -53,8 +52,6 @@ const Films = () => {
         const search = state.search.trim().toUpperCase();
         return title.includes(search);
     });
-
-    console.log(searchedMovies.length);
 
     return (
         <>

@@ -20,7 +20,7 @@ const context = createContext({
         latitude: 0,
         longitude: 0
     },
-    closestCinemas: 7
+    closestCinemas: 5
 });
 
 export default context;

@@ -26,7 +26,7 @@ const ShowingList = () => {
             }
         };
         state.cinemas.allIds
-            .slice(0, state.closestCinemas)
+            // .slice(0, state.closestCinemas)
             .map(async cinema => getShowings(cinema.id));
     }, [dispatch, state.cinemas, state.closestCinemas, state.selectedFilm]);
 
@@ -45,10 +45,13 @@ const ShowingList = () => {
             </Box>
         );
 
+    console.log(state);
+
     return (
         <div>
             <Box pad="large" margin="small" border="bottom" flex>
                 {state.cinemas.allIds
+                    .filter(cinema => state.showings.byId[cinema.id])
                     .slice(0, state.closestCinemas)
                     .map(cinema => {
                         const showing = state.showings.byId[cinema.id];
