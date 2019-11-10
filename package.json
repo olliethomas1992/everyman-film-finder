@@ -7,6 +7,7 @@
 		"date-fns": "^2.5.1",
 		"grommet": "^2.7.9",
 		"grommet-icons": "^4.3.0",
+		"is-mobile": "^2.1.0",
 		"lodash": "^4.17.15",
 		"react": "^16.10.2",
 		"react-dom": "^16.10.2",

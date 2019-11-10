@@ -46,8 +46,6 @@ const ShowingList = () => {
             </Box>
         );
 
-    console.log(state);
-
     return (
         <div>
             <Box pad="large" margin="small" border="bottom" flex>
