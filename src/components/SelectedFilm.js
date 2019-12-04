@@ -8,6 +8,10 @@ const SelectedFilm = ({ film }) => {
 
     if (!selectedFilm) return null;
 
+    const img = selectedFilm.Img
+        ? selectedFilm.Img.replace('http://', 'https://')
+        : undefined;
+
     const div = document.createElement('div');
     div.innerHTML = selectedFilm.Teaser;
     const filmText = div.textContent || div.innerText || '';
@@ -33,7 +37,7 @@ const SelectedFilm = ({ film }) => {
                                 fit="cover"
                                 alt={selectedFilm.Title}
                                 src={
-                                    selectedFilm.Img ||
+                                    img ||
                                     selectedFilm.MediaItems.QuadStill ||
                                     'https://via.placeholder.com/522'
                                 }
