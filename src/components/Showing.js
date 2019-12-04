@@ -20,7 +20,7 @@ const Showing = ({ showing }) => {
 
     const isMobile = process.browser && mobile();
 
-    const cityLink = `citymapper://directions?endcoord=${cinema.latitude}%2C${cinema.longitude}&endname=Everyman+${cinema.cinemaName}`;
+    const cityLink = `https://citymapper.com/directions?endcoord=${cinema.latitude}%2C${cinema.longitude}&endname=Everyman+${cinema.cinemaName}`;
     const gMapsLink = `https://www.google.com/maps/dir/?api=1&destination=${
         cinema.latitude
     },${cinema.longitude}/Everyman+${cinema.cinemaName

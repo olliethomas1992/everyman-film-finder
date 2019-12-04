@@ -6,6 +6,8 @@ import context from '../context';
 const FilmItem = ({ film }) => {
     const { dispatch } = useContext(context);
 
+    const img = film.Img ? film.Img.replace('http://', 'https://') : undefined;
+
     const onClickFilm = (e, selectedFilm) => {
         dispatch({ type: 'CLEAR_SHOWINGS' });
         dispatch({ type: 'SELECT_FILM', payload: selectedFilm.FilmId });
@@ -26,7 +28,7 @@ const FilmItem = ({ film }) => {
                 fit="cover"
                 alt={film.Title}
                 src={
-                    film.Img ||
+                    img ||
                     film.MediaItems.QuadStill ||
                     'https://via.placeholder.com/522'
                 }
